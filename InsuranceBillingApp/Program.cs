@@ -5,6 +5,7 @@ class Program
 {
     static void Main()
     {
+        Console.OutputEncoding = System.Text.Encoding.UTF8;
         using var db = new InsuranceDbContext();
         db.Database.EnsureCreated(); // Створює базу, якщо її ще нема
 
